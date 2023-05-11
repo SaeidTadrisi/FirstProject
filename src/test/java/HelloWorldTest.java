@@ -1,6 +1,8 @@
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.*;
+
 public class HelloWorldTest {
     @Test
     void Should_Print_Message() {
@@ -9,6 +11,6 @@ public class HelloWorldTest {
 
         String message = helloWorld.printMessage();
 
-        Assertions.assertThat(message).isEqualTo("Hello World!");
+        assertThat(message).isEqualTo("Hello World!");
     }
 }
